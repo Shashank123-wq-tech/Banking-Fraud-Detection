@@ -66,4 +66,4 @@ The project includes several visualizations to understand the dataset and fraud 
 The Random Forest model performed the best among all models and was selected as the final model.
 
 ## Some More Visualization of Model While Evaluating Xgboost.
-![Correlation Heatmap]()
+![Correlation Heatmap](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-03-12%20161243.png?raw=true)
