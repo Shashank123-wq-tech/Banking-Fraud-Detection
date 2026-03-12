@@ -50,9 +50,20 @@ isFlaggedFraud - The business model aims to control massive transfers from one a
 ## Visualization :
 The project includes several visualizations to understand the dataset and fraud patterns.
 ### Correlation Heatmap
-![Correlation Heatmap](images/correlation_heatmap.png)
-
+![Correlation Heatmap](Screenshot 2026-03-12 155546.png)
 
 ## Machine Learning Models
 - Stochastic Gradient Descent
 - XgboostClassifier
+
+## Model Comparison
+
+| Model | Accuracy | ROC-AUC-Score | Recall | PR-AUC|
+|------|------|------|------|------|
+|Stochastic Gradient Descent| 53% | 88% | 99% | 2% |
+| XgboostClassifier | 99% | 98% | 98% | 84% |
+
+The Random Forest model performed the best among all models and was selected as the final model.
+
+## Some More Visualization of Model While Evaluating Xgboost.
+![Correlation Heatmap]()
