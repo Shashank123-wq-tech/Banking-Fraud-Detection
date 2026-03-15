@@ -61,7 +61,7 @@ The project includes several visualizations to understand the dataset and fraud 
 | Model | Accuracy | ROC-AUC-Score | Recall | PR-AUC|
 |------|------|------|------|------|
 |Stochastic Gradient Descent| 53% | 88% | 99% | 2% |
-| XgboostClassifier | 99% | 98% | 98% | 84% |
+| Random Forest | 99% | 98% | 98% | 84% |
 
 The Random Forest model performed the best among all models and was selected as the final model.
 
