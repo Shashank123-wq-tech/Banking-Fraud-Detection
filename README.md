@@ -65,8 +65,18 @@ The project includes several visualizations to understand the dataset and fraud 
 
 The Random Forest model performed the best among all models and was selected as the final model.
 
-### Some More Visualization of Model While Evaluating Xgboost.
+### Some More Visualization of Model While Evaluating Randan Forest.
 ![Precision - Recall Curve](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-03-12%20161243.png?raw=true)
 
 ### Confusion Matrix
 ![Confusion Matrix](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-03-12%20161255.png?raw=true)
+### Interpretation:
+1) The model achieves ~98.5% recall, means Almost all fraudulent transactions are successfully detected.Only 24 fraud cases missed out of thousands.
+2) The Precision-Recall AUC of 0.843 indicates that the model maintains a good balance between precision and recall.Performs well even under extreme class imbalance
+ ,PR-AUC is the most relevant metric for fraud detection — and your score is very competitive.
+3) Correctly identifies 1,619 fraud cases
+Demonstrates:
+Strong pattern recognition
+Ability to capture subtle fraud signals.
+4) Your model is ideal for:
+Credit card monitoring systems Because it prioritizes catching fraud over convenience, which is the correct design choice in security systems.
