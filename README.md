@@ -69,7 +69,7 @@ The Random Forest model performed the best among all models and was selected as 
 ![Precision - Recall Curve](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-04-20%20160310.png)
 
 ### Confusion Matrix
-![Confusion Matrix](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-03-12%20161255.png?raw=true)
+![Confusion Matrix](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-04-20%20160322.png)
 ### Interpretation:
 1) The model achieves ~98.5% recall, means Almost all fraudulent transactions are successfully detected.Only 24 fraud cases missed out of thousands.
 2) The Precision-Recall AUC of 0.843 indicates that the model maintains a good balance between precision and recall.Performs well even under extreme class imbalance
