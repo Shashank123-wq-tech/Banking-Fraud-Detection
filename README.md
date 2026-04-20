@@ -60,8 +60,8 @@ The project includes several visualizations to understand the dataset and fraud 
 
 | Model | Accuracy | ROC-AUC-Score | Recall | PR-AUC|
 |------|------|------|------|------|
-|Stochastic Gradient Descent| 53% | 88% | 99% | 2% |
-| Random Forest | 99% | 98% | 98% | 84% |
+|Stochastic Gradient Descent| 97% | 92% | 86% | 4% |
+| XGBClassifier | 99% | 99% | 99% | 96% |
 
 The Random Forest model performed the best among all models and was selected as the final model.
 
@@ -71,12 +71,9 @@ The Random Forest model performed the best among all models and was selected as 
 ### Confusion Matrix
 ![Confusion Matrix](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-04-20%20160322.png)
 ### Interpretation:
-1) The model achieves ~98.5% recall, means Almost all fraudulent transactions are successfully detected.Only 24 fraud cases missed out of thousands.
-2) The Precision-Recall AUC of 0.843 indicates that the model maintains a good balance between precision and recall.Performs well even under extreme class imbalance
- ,PR-AUC is the most relevant metric for fraud detection — and your score is very competitive.
-3) Correctly identifies 1,619 fraud cases
-Demonstrates:
-Strong pattern recognition
-Ability to capture subtle fraud signals.
-4) Your model is ideal for:
-Credit card monitoring systems Because it prioritizes catching fraud over convenience, which is the correct design choice in security systems.
+1)A recall of 99% means the model detects almost all actual fraud cases, missing very few. This is critical because missing fraud is usually more costly than false alarms.
+2) Precision-Recall AUC is especially important for imbalanced datasets. A score of 96% shows that the model maintains a very strong balance between:
+(i) catching fraud (recall)
+(ii) avoiding false positives (precision)
+3) This is extremely strong. A ROC-AUC of 0.99 means the model can almost perfectly distinguish between fraud and non-fraud cases.
+4) In real-world fraud detection, the XGBClassifier effectively identifies almost all fraudulent transactions with high precision, minimizing both missed frauds and false alarms.
