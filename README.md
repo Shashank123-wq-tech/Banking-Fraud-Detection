@@ -50,7 +50,7 @@ isFlaggedFraud - The business model aims to control massive transfers from one a
 ## Visualization :
 The project includes several visualizations to understand the dataset and fraud patterns.
 ### Correlation Heatmap
-![Correlation Heatmap](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-03-12%20155546.png?raw=true)
+![Correlation Heatmap](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-04-20%20160251.png)
 
 ## Machine Learning Models
 - Stochastic Gradient Descent
