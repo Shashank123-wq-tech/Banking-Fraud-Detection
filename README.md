@@ -71,9 +71,12 @@ The Random Forest model performed the best among all models and was selected as 
 ### Confusion Matrix
 ![Confusion Matrix](https://github.com/Shashank123-wq-tech/Banking-Fraud-Detection/blob/main/Screenshot%202026-04-20%20160322.png)
 ### Interpretation:
-1)A recall of 99% means the model detects almost all actual fraud cases, missing very few. This is critical because missing fraud is usually more costly than false alarms.
+1) A recall of 99% means the model detects almost all actual fraud cases, missing very few. This is critical because missing fraud is usually more costly than false alarms.
+ 
 2) Precision-Recall AUC is especially important for imbalanced datasets. A score of 96% shows that the model maintains a very strong balance between:
-(i) catching fraud (recall)
-(ii) avoiding false positives (precision)
+(i) catching fraud (recall).
+(ii) avoiding false positives (precision).
+
 3) This is extremely strong. A ROC-AUC of 0.99 means the model can almost perfectly distinguish between fraud and non-fraud cases.
+ 
 4) In real-world fraud detection, the XGBClassifier effectively identifies almost all fraudulent transactions with high precision, minimizing both missed frauds and false alarms.
