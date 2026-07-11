@@ -1,6 +1,53 @@
 # Banking-Fraud-Detection
 Machine learning–based system to detect fraudulent banking transactions by analyzing transaction patterns and identifying suspicious activities.
 
+## Problem Statement
+
+Mobile money platforms are vulnerable to account-takeover fraud, where an attacker
+gains unauthorized control of a customer's account and attempts to drain it before
+the legitimate owner notices. In the PaySim simulation, this fraud pattern follows
+a consistent two-step chain: a **TRANSFER** that fully empties the victim's account
+balance, followed by a **CASH_OUT** that extracts the funds from the system via a
+mule account.
+
+Empirical analysis of the full dataset (6,362,620 transactions) confirms that fraud
+is structurally confined to these two transaction types:
+
+| Type      | Transactions | Fraud cases | Fraud rate |
+|-----------|-------------:|------------:|-----------:|
+| CASH_IN   | 1,399,284    | 0           | 0.00%      |
+| DEBIT     | 41,432       | 0           | 0.00%      |
+| PAYMENT   | 2,151,495    | 0           | 0.00%      |
+| TRANSFER  | 532,909      | 4,097       | 0.77%      |
+| CASH_OUT  | 2,237,500    | 4,116       | 0.18%      |
+
+No fraud occurs in CASH_IN, DEBIT, or PAYMENT transactions, and all destination
+accounts in the TRANSFER/CASH_OUT population are verified customer accounts
+(0 merchant destinations) — the merchant-related data quality artifacts present
+in the full dataset (untracked balances) do not affect this modeling population.
+
+Existing rule-based controls (`isFlaggedFraud`: flagging single transfers over
+200,000) fail to catch the vast majority of fraud, which frequently occurs at
+much smaller transaction amounts. This leaves a critical detection gap that a
+supervised machine learning model can address.
+
+## Goal
+
+Build a binary classification model that scores TRANSFER and CASH_OUT
+transactions in real time with the probability that they represent
+account-takeover fraud, enabling the platform to intercept fraudulent transfers
+and cash-outs before funds exit the system — while minimizing false positives
+that would disrupt legitimate customers.
+
+**Success criteria:**
+- Maximize **recall** (fraud catch rate) at an acceptable **precision** threshold,
+  given the severe cost asymmetry between missed fraud (direct financial loss)
+  and false holds (customer friction)
+- Primary evaluation metric: **Precision-Recall AUC** (not accuracy or ROC-AUC
+  alone, given ~0.3% fraud prevalence in the scoped population)
+- Report business-facing performance as: *"At X% precision, the model catches
+  Y% of fraudulent transactions"*
+
 # Project Objectives
 - Detect fraudulent transactions.
 - Reduce financial losses.
