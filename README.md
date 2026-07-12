@@ -203,6 +203,16 @@ alarm. XGBoost is the only model that holds precision and recall together
 </tr>
 </table>
 
+## Business Impact
+
+- **High Fraud Detection Performance:** Achieved **99.7% fraud recall** with an **ROC-AUC of 0.9984**, enabling the system to identify nearly all fraudulent transactions while maintaining reliable classification performance on highly imbalanced financial data.
+
+- **Minimal Customer Disruption:** Generated only **29 false positives** out of **552,439 legitimate transactions** (≈0.005% false positive rate), significantly reducing unnecessary transaction blocks and improving customer experience.
+
+- **Behavior-Based Fraud Intelligence:** Engineered domain-specific financial features such as **sender balance inconsistency, account depletion, transaction-to-balance ratio, and destination balance availability**, allowing the model to detect suspicious transaction behavior instead of relying solely on transaction amount.
+
+- **Production-Ready Decision Support:** Developed an **XGBoost-based fraud detection pipeline** capable of real-time risk scoring, helping financial institutions prioritize high-risk transactions, reduce manual investigation workload, and minimize potential financial losses.
+
 ## Tech Stack
 
 Python · pandas · scikit-learn · XGBoost · LightGBM · Jupyter · Matplotlib / Seaborn
