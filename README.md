@@ -166,26 +166,34 @@ alarm. XGBoost is the only model that holds precision and recall together
 
 <table>
 <tr>
-<td align="center"><b>Logistic Regression</b><br><img src="assets/confusion_matrix_logreg.png" width="260"/></td>
-<td align="center"><b>LightGBM</b><br><img src="assets/confusion_matrix_lgbm.png" width="260"/></td>
-<td align="center"><b>XGBoost</b><br><img src="assets/confusion_matrix_xgboost.png" width="260"/></td>
+<td align="center"><b>XGBoost</b><br><img src="Screenshot 2026-07-12 123520.png" width="260"/></td>
 </tr>
 </table>
-
-*(Export confusion matrix plots to `assets/` and update the paths above.)*
 
 ### Feature Correlation — Before vs After Feature Engineering
 
 <table>
 <tr>
-<td align="center"><b>Before feature engineering</b><br><img src="assets/correlation_before.png" width="380"/></td>
-<td align="center"><b>After feature engineering</b><br><img src="assets/correlation_after.png" width="380"/></td>
+<td align="center"><b>Before feature engineering</b><br><img src = "Screenshot 2026-07-12 124651.png" width="380"/></td>
+<td align="center"><b>After feature engineering</b><br><img src="Screenshot 2026-07-12 121120.png" width="380"/></td>
 </tr>
 </table>
 
-*(Export correlation heatmaps to `assets/` and update the paths above. Useful
-to show how engineered features like `sender_error` and `emptied_account`
-correlate more strongly with `isFraud` than the raw balance columns did.)*
+### ROC-AUC Curve
+
+<table>
+<tr>
+<td align="center"><b>XGBoost</b><br><img src="" width="260"/></td>
+</tr>
+</table>
+
+### PR-AUC Curve
+
+<table>
+<tr>
+<td align="center"><b>XGBoost</b><br><img src="" width="260"/></td>
+</tr>
+</table>
 
 ## Tech Stack
 
