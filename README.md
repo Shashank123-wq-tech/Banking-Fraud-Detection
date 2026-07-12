@@ -183,7 +183,7 @@ alarm. XGBoost is the only model that holds precision and recall together
 
 <table>
 <tr>
-<td align="center"><b>XGBoost</b><br><img src="" width="260"/></td>
+<td align="center"><b>XGBoost</b><br><img src="Screenshot 2026-07-12 123934.png" width="260"/></td>
 </tr>
 </table>
 
@@ -191,7 +191,15 @@ alarm. XGBoost is the only model that holds precision and recall together
 
 <table>
 <tr>
-<td align="center"><b>XGBoost</b><br><img src="" width="260"/></td>
+<td align="center"><b>XGBoost</b><br><img src="Screenshot 2026-07-12 123647.png" width="260"/></td>
+</tr>
+</table>
+
+### Feature Importance
+
+<table>
+<tr>
+<td align="center"><b>XGBoost</b><br><img src="Screenshot 2026-07-12 123713.png" width="260"/></td>
 </tr>
 </table>
 
