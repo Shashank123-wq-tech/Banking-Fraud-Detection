@@ -14,7 +14,7 @@
 ![Repo size](https://img.shields.io/github/repo-size/Shashank123-wq-tech/Banking-Fraud-Detection)
 
 Machine learning system for detecting account-takeover fraud in mobile money
-transactions, built on the PaySim simulated transaction dataset. Trained and
+transactions, built on the Financial simulated transaction dataset. Trained and
 compared four classifiers — SGD, Logistic Regression, LightGBM, and XGBoost —
 to flag fraudulent TRANSFER and CASH_OUT transactions in real time, with the
 long-term goal of evolving this into a full production fraud detection
