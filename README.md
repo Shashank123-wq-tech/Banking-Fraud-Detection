@@ -24,7 +24,7 @@ platform.
 
 Mobile money platforms are vulnerable to account-takeover fraud, where an
 attacker gains unauthorized control of a customer's account and attempts to
-drain it before the legitimate owner notices. In the PaySim simulation, this
+drain it before the legitimate owner notices. In the simulation, this
 fraud pattern follows a consistent two-step chain: a **TRANSFER** that fully
 empties the victim's account balance, followed by a **CASH_OUT** that extracts
 the funds from the system via a mule account.
