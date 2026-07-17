@@ -146,8 +146,8 @@ contributes almost nothing to fraud detection.
 
 | Model                        | Accuracy | Precision | Recall  | F1 Score | ROC-AUC | PR-AUC  |
 |-------------------------------|---------:|----------:|--------:|---------:|--------:|--------:|
-| Stochastic Gradient Descent   | 97%      | —         | 86%     | —        | 0.92    | 0.04    |
-| Logistic Regression            | 96.96%   | 8.79%     | 98.54%  | 0.1613   | 0.9963  | —       |
+| Stochastic Gradient Descent   | 97%      | 8%        | 86%     | 0.23       | 0.92    | 0.04    |
+| Logistic Regression            | 96.96%   | 8.79%     | 98.54%  | 0.1613   | 0.9963  | 0.11     |
 | LightGBM                       | 98.05%   | 12.93%    | 97.44%  | 0.2284   | 0.9775  | 0.1261  |
 | **XGBoost (selected)**         | **99.99%** | **98.26%** | **99.70%** | **0.9897** | **0.9984** | **0.9979** |
 
