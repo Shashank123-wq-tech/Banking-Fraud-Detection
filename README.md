@@ -48,6 +48,8 @@ rule-based control (`isFlaggedFraud`, which flags single transfers over
 200,000) fails to catch the vast majority of fraud, which frequently occurs at
 much smaller amounts.
 
+Dataset Link with Data Dictionary: https://drive.google.com/drive/folders/1NifXx7E2bzEPaSBTieoXOqCCFIgCFjM8?usp=sharing
+
 ## Goal
 
 Build a binary classification model that scores TRANSFER and CASH_OUT
