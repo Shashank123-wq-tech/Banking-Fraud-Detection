@@ -29,7 +29,7 @@ fraud pattern follows a consistent two-step chain: a **TRANSFER** that fully
 empties the victim's account balance, followed by a **CASH_OUT** that extracts
 the funds from the system via a mule account.
 
-Empirical analysis of the full dataset (6,362,620 transactions) confirms fraud
+Empirical analysis of the full dataset (6 Millions transactions) confirms fraud
 is structurally confined to these two transaction types:
 
 | Type      | Transactions | Fraud cases | Fraud rate |
